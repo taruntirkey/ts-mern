@@ -1,3 +1,31 @@
+# Description
+This is a ts-mern starter template repo. Follow the steps before starting to work after cloning.
+
+1. Rename directory **ts-mern** to **new-project-name**.
+```
+Rename-Item -Path "ts-mern" NewName "new-project-name"
+```
+
+2. Remove hidden **.git** directory.
+```
+rm ./git/ -recurse -force
+
+```
+3. Verify project isn't initialized with **_git_**.
+```
+git status
+```
+
+4. Remove _package-lock.json_ and _frontend/package-lock.json_.
+```
+rm .\package-lock.json, .\frontend\package-lock.json
+```
+5. Rename `"name": "ts-mern"` to `"name": "new-project-name"` _package.json_.
+6. Remove `"ts-mern"` under `"dependencies"` in _frontend/package.json_.
+7. Execute `npm i`.
+8. Change directory to ./frontend, the execute `npm i`.
+9. Run `git init` in project root initialize git.
+
 # Language
 
 TypeScript
