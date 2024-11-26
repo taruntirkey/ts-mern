@@ -32,7 +32,7 @@ app.use(morgan("combined"));
 app.use("/healthcheck", healthcheck);
 
 // Register Routes
-app.get("api", apiRouter);
+app.use("/api", apiRouter);
 
 // In production environment, serve frontend
 if (process.env.NODE_ENV === "production") {
